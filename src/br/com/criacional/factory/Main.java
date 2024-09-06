@@ -23,6 +23,9 @@ public class Main {
             case "log" :
                 transport = new MotorcycleTransport();
                 break;
+            case "eat" :
+                transport = new BikeTransport();
+                break;
             default:
                 System.out.println("Selecione o tipo de entrega!");
         }
