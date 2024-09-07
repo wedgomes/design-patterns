@@ -13,7 +13,8 @@ public class Main {
 
         String company = "uber";
 
-        if(company == "99"){
+        if(company == "uber"){
+//            factory = new UberTransport();
             factory = new UberTransport();
         }else {
             factory = new NineNineTransport();
