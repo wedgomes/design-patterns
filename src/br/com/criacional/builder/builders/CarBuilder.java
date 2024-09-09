@@ -31,6 +31,11 @@ public class CarBuilder implements IBuilder{
         this.engine = engine;
     }
 
+    @Override
+    public void setCor(String cor) {
+
+    }
+
     public Car getresult(){
         return new Car(carType, seats, engine, transmission);
     }
