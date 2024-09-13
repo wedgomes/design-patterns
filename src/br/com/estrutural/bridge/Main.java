@@ -1,9 +1,6 @@
 package br.com.estrutural.bridge;
 
-import br.com.estrutural.bridge.plataforms.FacebookLive;
-import br.com.estrutural.bridge.plataforms.IPlatform;
-import br.com.estrutural.bridge.plataforms.TwitchTV;
-import br.com.estrutural.bridge.plataforms.Youtube;
+import br.com.estrutural.bridge.plataforms.*;
 import br.com.estrutural.bridge.transmissions.AdvancedLive;
 import br.com.estrutural.bridge.transmissions.Live;
 
@@ -12,6 +9,7 @@ public class Main {
         startLive(new Youtube());
         startLive(new TwitchTV());
         startLive(new FacebookLive());
+        startLive(new DisneyPlus());
     }
 
     public static void startLive(IPlatform platform){
